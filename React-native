@@ -1,0 +1,1112 @@
+# What are the advantages of expo? (same ans like 2)
+
+# 2 What are the advantages of React Native?
+
+Ans React Native is a cross-platform technology that offers many advantages for app development, including:
+
+1 cost effective
+
+2 Faster to learn for react developer
+
+3 Large community and ecosystem
+
+4 Free to use 
+
+5 Cross-platform compatibility: Most of the code is cross-platform, meaning developers only have to create one app rather than two separate apps for both iOS and Android
+
+- React Native is a great option for developing a hybrid app that does not require extremely high performance.
+- Cross-platform compatibility means development teams can save lots of time when using React Native compared to a native framework.
+- However, it might not be suitable when designing complex apps or if developers aren’t already well-versed in React code.
+
+# 3 What is the difference between an Element and a Component in React?
+
+Ans In React, an element is the smallest building block while the component is a reusable piece of the code for creating user interface. (Then take ex of daily-news website).
+
+Element is combination of opening tag, content and closing tag, <h1>content</h1>. React components are JavaScript functions.  They return JSX.
+
+# 4 What does a StyleSheet.create do?
+
+Ans We can create a stylesheet by using StyleSheet. create. A stylesheet is a set of guidelines used to create a style or design of elements.
+
+StyleSheet in React Native shares several attributes with CSS, including color, height, top, right, bottom, and left.
+
+# 5 What are the differences between Class and Functional Component?
+
+Ans The main difference between class and functional components in React is their syntax and how they manage state and lifecycle methods:
+
+Syntax
+
+A functional component is a JavaScript function that returns JSX, while a class component is a JavaScript class that extends React.
+
+Verbosity
+
+Class components require more code to achieve the same functionality as functional components. This can make the code harder to read and maintain.
+
+Learning curve
+
+Class components can be confusing for beginners because of their syntax and concepts, such as the use of this and lifecycle methods. Functional components are like normal javascript function.
+
+# 6 What are the similarities between React and React Native?
+
+The most common similarities between React and React Native are:
+
+- React States and Props
+- React Components
+- React context api
+- Redux Libraries
+- React Lifecycle Methods
+
+# 7 What is the difference between React and React Native?
+
+Ans React Native is used to develop mobile apps for iOS and Android, whereas React JS is used to build web applications in a web browser.
+
+React is a **JavaScript library** for building user interfaces for web applications, while React Native is a **javascript framework** for building mobile apps.
+
+# How do native apps differ from hybrid apps?
+
+Native apps and hybrid apps differ in several ways, including:
+
+Development: Native apps are built for a specific platform, such as iOS or Android, while hybrid apps are built to work across all platform.
+
+Codebase: Native apps are written in platform-specific languages (android Kotlin, IOS Swift), while hybrid apps are built using a single codebase that combines HTML, CSS, and JavaScript. (and flutter uses Dart)
+
+Performance: Native apps are generally faster and more responsive than hybrid apps.
+
+Security: Native apps are generally more secure than hybrid apps.
+
+Development cost: Native apps are generally more expensive to develop than hybrid apps.
+
+# 9. What are the core components of React Native?
+
+Ans Components are the building blocks of React Native; when combined, they make up the app as a whole. Some of the most common components are:
+
+View, used to display the entire app layout
+
+Text, used to display text
+
+TextInput, used to input text
+
+ScrollView, used to insert a scrolling container
+
+FlateList, ----
+
+Image, used to render images
+
+Button, used to insert buttons
+
+TouchableOpecity
+
+Pressable
+
+# 10. What is the role of Flexbox in React?
+
+Ans Flex box stands for flexible box it is used for creating different responsive and flexible layouts. For flex container we have properties like flex direction, flex wrap, justify content, align items, gap etc.**Read** **From notes.**
+
+# 11 What coding languages are compatible with React Native?
+
+Ans  Java, kotlin, swift
+
+# 12 What is the use of Flex 1 in React Native?
+
+Ans Normally we use flex: 1, which tells a component to fill all available space, shared evenly amongst other components with the same parent. The larger the flex given, the higher the ratio of space a component will take compared to its siblings.
+
+# 13 What is framework and library?
+
+Ans Both libraries and frameworks are collections of pre-written code that developers use to speed up software development. (Then take ex of Sherians)
+
+# 14 Explain about <FlateList> and <ScrollView> and what is difference between them?
+
+Ans <FlateList
+
+data={User} //User should be array
+
+renderItem={({item})=>(<Text>{item.val})</Text>))}
+
+keyExtractor=(item)=>item.key
+
+/>
+
+<ScrollView
+
+contentContainerStyle={styles.container}
+
+horizontal
+
+showHorizontalScrollIndicator={false}
+
+/> </ScrollView>
+
+# 15 How do you create a component in React Native?
+
+Ans To create component in react native we create javaScript function or class which returns JSX.
+
+# 16 What is the significance of the 'render' method in React Native components?
+
+Ans Render method decides what component should render on screen basis on its current state and props.
+
+# 17 What is ‘state’ in react?
+
+Ans State is a mechanism in react for managing dynamic data within a component.
+
+# 18 What is 'state' in React and how is it different from 'props'?
+
+Ans State is a mechanism in react for managing dynamic data within a component. Props stands for properties and they are used to pass data between components. (From parent to child). Props are immutable and passes from parent component but state can be changed using setState method.
+
+# 18 How do you handle user input using React Native?
+
+Ans User Input in react native can be handled by using multiple event handlers like ‘onPress’, ‘onChangeText’ etc.
+
+# 19 What do you mean by debugging?
+
+Ans Debugging is the process of finding and fixing errors or bugs in the source code.
+
+# 19 How would you debug a React Native application?
+
+Ans For debugging react native application we have multiple tools like debugger, flipper. I mostly prefer to use console.log() and debugger for debugging.
+
+# 20 How do you handle navigation between screens in React Native?
+
+Ans In react native for navigating between screens we use push, replace, navigate, goBack methods. Majorly we use three types of navigation → Stack navigation, Drawer navigation and Tab navigation.
+
+Navigation between screens in React Native is managed using libraries like React Navigation. You define a navigator component and configure the screens you want to navigate to. Then, you use navigation methods like 'navigate', 'push', 'goBack', etc., to move between screens.
+
+# Explain me navigation in react native and expo?
+
+## in react native
+
+**1 install dependencies**
+
+### **Step 3: Wrap your App with Navigation Container**
+
+In `App.js`:
+
+```jsx
+js
+CopyEdit
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      {/* Your navigator goes here */}
+    </NavigationContainer>
+  );
+}
+
+```
+
+---
+
+### **Step 4: Create Navigators**
+
+### Example: Stack Navigator
+
+```jsx
+js
+CopyEdit
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './screens/HomeScreen';
+import DetailsScreen from './screens/DetailsScreen';
+
+const Stack = createNativeStackNavigator();
+
+function AppNavigator() {
+  return (
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Details" component={DetailsScreen} />
+    </Stack.Navigator>
+  );
+}
+
+```
+
+Then use it in your `App.js` inside `NavigationContainer`:
+
+```jsx
+js
+CopyEdit
+<NavigationContainer>
+  <AppNavigator />
+</NavigationContainer>
+
+```
+
+---
+
+### **Step 5: Navigate Between Screens**
+
+Inside a component (e.g., HomeScreen):
+
+```jsx
+js
+CopyEdit
+import { Button } from 'react-native';
+
+function HomeScreen({ navigation }) {
+  return (
+    <Buttontitle="Go to Details"
+      onPress={() => navigation.navigate('Details', { itemId: 42 })}
+    />
+  );
+}
+
+```
+
+---
+
+### **Step 6: Receive Params on Next Screen**
+
+Inside `DetailsScreen.js`:
+
+```jsx
+js
+CopyEdit
+function DetailsScreen({ route }
+
+```
+
+# What is difference between push, replace, dismissTo and dismissAll?
+
+router.push('/profile')
+➡️ This will navigate to target screen, and allow going back to the previous screen
+
+router.replace('/login')
+➡️ This will navigate to target, but we won’t be able to go back to the screen that called replace().
+
+router.dismissTo('/home')
+➡️ This will dismiss all modals/screens until it reaches the target route.
+
+### What happens if `/home` is **not** in the stack?
+
+- **Nothing happens.**
+- `router.dismissTo('/home')` will **silently fail** — it **does not navigate** anywhere.
+- It will **not add** `/home` to the stack, nor will it crash.
+
+router.dismissAll()
+➡️ This will remove all modals/screens and return to the root screen of the app.
+
+# 21 What is difference between Stack, tab and drawer navigation and when we use this?
+
+Stack navigation → When screens are dependent on each other like first we go in login screen then Home screen (where showing movie list) then if i click on any movie then i will go on movie details screen. (here we need stack navigation because screens are dependent on each other)
+
+Tab navigation → When screens are not dependent on each other and we want to provide quick access to the screens then we can use it.
+
+Drawer navigation → when we want to show multiple options to go on different screens then we can use drawer navigation. We can hide these options through sidebar using drawer.
+
+# What is the sequence of stack, tab, drawer in react native?
+
+It’s dependent on requirement but we mostly follow
+**Stack → Tab → Drawer (Most Common)**
+
+# 21 What are 'keys' in React and why are they important in lists?
+
+Ans Keys are important attributes and used to uniquely identify elements in list.
+
+# 22 How can you make a network request in React?
+
+Ans Network request in react native made by “fetch API”, “axios”, “rtk query” and “graph ql”. API response is handle using promises or async/await.
+
+# 23 How do you optimize performance in a React Native application?
+
+Ans I try to write less lines of code and less variables, stats, use reusable components, avoiding unnecessary re-renders. Try to avoid prop drilling and instead of using prop drilling use context API or redux library.
+
+Performance optimization in React Native involves using PureComponent and memoization techniques, optimizing render methods, avoiding unnecessary re-renders, and implementing code splitting. Profiling tools like React DevTools can help identify performance bottlenecks.
+
+# 24 How can you integrate third-party libraries in a React app?
+
+And Third party libraries can be integrate using package management like npm or yarn. We install the library import it into code and then use that.
+
+# 25 How do you handle form validation in React?
+
+Ans Form validation in react is done using state and event handling. We take user inputs using elements like <TextInput>, validate the input by our criteria then display error messages.
+
+# 26 Explain the architecture of a React app.
+
+Ans React follows component based architecture. It consists of reusable components, data management using state and props and global state management using context api and redux library.
+
+# 27 What is the role of 'navigator' in React Navigation?
+
+Ans navigator is core component in react it manages navigation flow between screens.
+
+# 28 How can you achieve a responsive design in React Native?
+
+Ans For making responsive design we can use flexbox, media query, responsive fonts, library like “react-native-size-matters”.
+
+# 26 Explain about dimension or dimension method in react native?
+
+Ans For getting dimension of screen we can use dimension method.
+
+const {width,height}= Dimension.get(‘window’);
+
+Const width=Dimension.get(‘window’).width
+
+# 27 For filling form data properly we can use 
+
+<KeybordAvoidingView>
+
+<Scrollview>
+
+<Form…………………………. />
+
+</Scrollview>
+
+</KeybordAvoidingView>
+
+# 28 What we use for creating loader in react native?
+
+Ans <ActivationIndecator color=’red’ size=’small/large’ style= {{}}/>
+
+# 29 What is difference between flatelist and scroolview in react native?
+
+# 30 what is difference between react native and expo?
+
+Ans ï  **React Native** offers more flexibility and access to native code, making it better for larger and more complex applications.
+
+ï  **Expo** simplifies the development process with ready-made features and easier setup, making it ideal for beginners or simpler apps, but with limited access to native modules unless ejected.
+
+# 33 What is the use of flatelist element?
+
+# 34 Why we make android and ios folders in react native?
+
+If we want to create specific build or apk then we can use these folder.
+If we want to add some specific functionality in our app for ios or android then we can use it.
+like in vpn app for taking installed app of devices.
+
+# 35 Explain the useReducer and useMemo hooks?
+
+Ans useMemo hook returns memorization value and prevents applications from unnecessary rendering and for optimizing performance of application.
+
+# What is the difference between useState and useReducer in React?
+
+useState is simpler and more suitable for managing simple state variables, while useReducer is better suited for complex state logic. useState allows you to handle state updates directly, while useReducer requires you to define a separate reducer function to handle state updates based on actions.
+
+# 36 How to make top tab in react native?
+
+# 37 What is difference npm and yarn?
+
+Interview question  https://www.testgorilla.com/blog/react-native-interview-questions/
+
+https://www.turing.com/interview-questions/react-native
+
+# What is the way to store data in local store of mobile in react native?
+
+1. React native async storage
+2.  expo-secure-store
+
+These are most common library for managing local data in react native they have build in methods for storing, updating and deleting data in local storage..
+
+# What is useFocusEffect?
+
+useFocusEffect is hook used to perform action when a screen comes into focus.
+
+`import { useFocusEffect } from '@react-navigation/native';
+import { useCallback } from 'react';`
+
+`useFocusEffect(
+useCallback(() => {
+// Do something when the screen is focused
+console.log('Screen is focused');`
+
+```markup
+  return () => {
+  // Cleanup if needed when screen is unfocused
+  console.log('Screen is unfocused');
+  };
+```
+
+`}, [])
+);` 
+
+# **What is fetch, axios and rtk query in react native? Explain difference between them?**
+
+Ans **1 With axios we need to add additional library whereas fetch not requires this.**
+
+**2 Syntax difference** 
+
+**Fetch post request** ➔
+
+let url = 'https://someurl.com';
+
+let options = {
+
+method: 'POST',
+
+mode: 'cors',
+
+headers: {
+
+'Accept': 'application/json',
+
+'Content-Type': 'application/json;charset=UTF-8'
+
+},
+
+body: JSON.stringify({ **// we need to stringify the data**
+
+property_one: value_one,
+
+property_two: value_two
+
+})
+
+};
+
+let response = await fetch(url, options);
+
+let responseOK = response && response.ok;
+
+if (responseOK) {
+
+let data = await response.json(); **// we need json method**
+
+// do something with data
+
+}
+
+**Axios post request** 
+
+let url = 'https://someurl.com';
+
+let options = {
+
+method: 'POST',
+
+url: url,
+
+headers: {
+
+'Accept': 'application/json',
+
+'Content-Type': 'application/json;charset=UTF-8'
+
+},
+
+data: {
+
+property_one: value_one,
+
+property_two: value_two
+
+}
+
+};
+
+let response = await axios(options);
+
+let responseOK = response && response.status === 200 && response.statusText === 'OK';
+
+if (responseOK) {
+
+let data = await response.data;
+
+// do something with data
+
+}
+
+**3 Axios is compatible for all the browser but fetch not.**
+
+**4 In axios we can use additional timeout property but it’s not in fetch.**
+
+axios({
+
+method : ‘post’,
+
+url : ‘/………….’,
+
+timeout: 4000,
+
+data:{………………}
+
+})
+
+How timeout Works:
+
+1. If the request takes longer than the specified timeout (4 seconds in this case), Axios will terminate the request.
+2. It will throw an error with the message ECONNABORTED to indicate the timeout was exceeded.
+
+Although inside fetch we can create instense of abort controller
+
+**Rtk query**  ****We use rtk query when we are using redux toolkit because it is provided by redux toolkit.
+
+# **Write about different status code in react?**
+
+1. Success Responses (200–299)
+
+These are used when a request is successfully processed.
+
+- **200 OK**: The request was successful, and the server returned the expected result.
+    - Example: Display fetched data (e.g., user profiles, product listings).
+    - if (response.status === 200) {
+    - setData(response.data);
+    - }
+- **201 Created**: A resource has been successfully created (e.g., after a POST request).
+    - Example: After a user signs up or creates a new post.
+    - if (response.status === 201) {
+    - alert('Resource created successfully!');
+    - }
+- **204 No Content**: The request was successful, but there's no content to send back.
+    - Example: When deleting a resource.
+    - if (response.status === 204) {
+    - alert('Deleted successfully!');
+    - }
+
+**2. Client Error Responses (400–499)**
+
+These codes indicate issues caused by the client (e.g., invalid input, authentication errors).
+
+- **400 Bad Request**: The request has invalid syntax or parameters.
+    - Example: Show validation errors on a form.
+    - if (response.status === 400) {
+    - setError('Invalid input! Please check your data.');
+    - }
+- **401 Unauthorized**: Authentication is required, or the provided credentials are invalid.
+    - Example: Redirect the user to a login page.
+    - if (response.status === 401) {
+    - navigate('/login');
+    - }
+- **403 Forbidden**: The client does not have permission to access the resource.
+    - Example: Show an access denied message.
+    - if (response.status === 403) {
+    - setError('You do not have permission to perform this action.');
+    - }
+- **404 Not Found**: The requested resource doesn't exist.
+    - Example: Show a custom "Page Not Found" message.
+    - if (response.status === 404) {
+    - setError('Page or resource not found!');
+    - }
+- **429 Too Many Requests**: The client has sent too many requests in a short period (rate limiting).
+    - Example: Notify the user to try again later.
+    - if (response.status === 429) {
+    - setError('Too many requests! Please slow down.');
+    - }
+
+**3. Server Error Responses (500–599)**
+
+These indicate problems on the server side.
+
+- **500 Internal Server Error**: A generic error when the server fails unexpectedly.
+    - Example: Show a fallback error message.
+    - if (response.status === 500) {
+    - setError('Something went wrong on our end. Please try again later.');
+    - }
+- **503 Service Unavailable**: The server is temporarily unavailable (e.g., maintenance).
+    - Example: Notify the user of downtime.
+    - if (response.status === 503) {
+    - setError('The service is currently unavailable. Please try again later.');
+    - }
+
+**Most Commonly Used Codes in React Projects**
+
+*Fetch Data*
+
+- **200 OK**: The request was successful, and the server returned the expected result.
+- **404 Not Found**: The requested resource doesn't exist.
+
+*Form Submission*
+
+- **201 Created**: A resource has been successfully created (e.g., after a POST request).
+- **400 Bad Request**: The request has invalid syntax or parameters.
+
+*Authentication*
+
+- **401 Unauthorized**: Authentication is required, or the provided credentials are invalid.
+- **403 Forbidden**: The client does not have permission to access the resource.
+
+*Error Handling*
+
+- **500 Internal Server Error**: A generic error when the server fails unexpectedly.
+- **503 Service Unavailable**: The server is temporarily unavailable (e.g., maintenance).
+
+**200, 400, 404, 500. 503**
+
+# How to use firebase in react native?
+
+# **How you can apply notification functionality in your app?**
+
+Ans using firebase –
+
+1 install the dependencies
+
+2 login to firebase console
+
+3 create project
+
+4 then inside project we can create app
+
+5 download google service file  Download the google-services.json file which is used to integrate your application and paste that file in your android/app directory.
+
+1. Then we provide some permissions in androidManifest.xml file
+
+**6 then we can follow react native firebase documentation** for foreground and  background mode.
+
+(in foreground mode for showing notification we use notifee)
+
+# **How to use Map in app? (basic flow)**
+
+Ans For integrating map in react native we use react-native-maps library.
+
+1 install the dependencies
+
+2 We generate google map key
+
+3 Then we put map key in androidManifest file
+
+4 Now we can use map elements like <MapView> and <Marker>
+
+mapView for showing normal map and marker for showing marker or pointer
+
+# **11 How to change font family in react native?**
+
+# **13 How we can handle night mode in app?**
+
+We can use “useColorScheme” react native hook which provide us current theme and according to that we can choose color and other things for our app.
+
+# What is the flow of redux in react native? (explain according love babber video)
+
+# what is Action in redux? action is javascript object that describes event.
+
+# Have you ever deployed any project in play store and app store?
+
+# Tell me about your projects?
+
+# Satocci
+
+1 basic work flow → for camara and scanning i used
+
+2 difficulty → it was my first project and i was only react native developer in my company so i faced lot of problems.
+
+In my project, I used a map, and the app was crashing because all the markers were loading too quickly while moving the map. I referred to the React Native Maps documentation and optimized the code. 
+
+tracksViewChanges={false}
+
+3 improvement → i can add some more features like scanning debit card.
+
+```
+import {
+  BarcodeScanningResult,
+  CameraView,
+  useCameraPermissions,
+} from "expo-camera";
+```
+
+# How email messaging working in satocci?
+
+# What is jwt authentication?
+
+# Tasks
+
+# **Make a basic app using context?**
+
+```tsx
+
+//appContext.tsx
+import { createContext } from "react";
+
+const AppContext=createContext({});
+
+const AppContextProvider=({children}:any)=>{
+    const value={
+        name:'sid'
+    }
+   return <AppContext.Provider value={value}>
+    {children}
+   </AppContext.Provider>
+}
+
+export { AppContext, AppContextProvider };
+
+// root file layout.tsx
+<AppContextProvider>
+        <App/>
+ </AppContextProvider>
+
+```
+
+# Make app using redux and make it responsive using library? (love babber)
+
+# **Make basic todo list app and perform crud operation apply multi delete functionality?**
+
+```tsx
+import AntDesign from "@expo/vector-icons/AntDesign";
+import Checkbox from 'expo-checkbox';
+import React, { useState } from "react";
+import { FlatList, Pressable, Text, TextInput, View } from "react-native";
+
+const index = () => {
+  const [task, setTask] = useState<any>("");
+  const [taskList, setTaskList] = useState<any>([]);
+  const [isEdit, setIsEdit] = useState<any>(false);
+  const [editId,setEditId]=useState<any>(null);
+  const [deleteList,setDeleteList]=useState<any>([]);
+  
+  const editHandler=(id:any,text:any)=>{
+    setIsEdit(true);
+    setEditId(id);
+    setTask(text);
+  }
+
+  const deleteHandler=(id:any)=>{
+    const updatedData=taskList.filter((item:any)=>{
+      return item.id!=id
+    })
+    setTaskList(updatedData);
+  }
+
+  const checkboxHandler=(id:any)=>{
+    let updatedData=taskList?.map((item:any)=>{
+      if(item.id==id){
+        if(item?.isChecked){
+          let newData=deleteList?.filter((item:any)=>item!=id);
+          setDeleteList(newData);
+        }else{
+          setDeleteList((prev:any)=>[...prev,id])
+        }
+        return {...item,isChecked:!item?.isChecked}
+        ;
+      }
+      return item;
+    });
+    setTaskList(updatedData);
+  }
+
+  const renderData = ({ item, index }: any) => {
+    return ( item?.text.length>0 ?
+      <View style={{ flexDirection: "row", gap: 10, padding:15, borderWidth:1, borderColor:'black',marginVertical:10}}>
+        <Checkbox style={{}} value={item?.isChecked} onValueChange={()=>checkboxHandler(item?.id)} />
+        <Text style={{flex:1,}}>{item?.text}</Text>
+        <View style={{ flexDirection: "row", gap: 15 }}>
+          <AntDesign name="edit" size={24} color="black" onPress={()=>editHandler(item.id,item.text)} />
+          <AntDesign name="delete" size={24} color="black"  onPress={()=>deleteHandler(item?.id)}/>
+        </View>
+      </View>:null
+    );
+  };
+
+  const addHandler = () => {
+    if(isEdit && editId){
+      let updatedData=taskList.map((item:any)=>{
+        if(item.id==editId){
+          return {...item,text:task}
+        }
+        return item;
+      })
+      setTaskList(updatedData);
+      setEditId(null);
+      setIsEdit(false);
+      setTask("")
+      return;
+    }
+    setTaskList((prev: any) => [
+      ...prev,
+      { id: Date.now().toString(), text: task, isChecked: false },
+    ]);
+    setTask("");
+  };
+
+  return (
+    <View style={{ flex: 1, padding: 12, marginTop: 40 }}>
+      <View style={{ flexDirection: "row", gap: 20 }}>
+        <TextInput
+          value={task}
+          onChangeText={setTask}
+          style={{
+            height: 40,
+            width: "80%",
+            borderColor: "black",
+            borderWidth: 1,
+          }}
+        />
+        <Pressable onPress={addHandler}>
+          <Text style={{ lineHeight: 40 }}>{isEdit ? "Update" : "Add"}</Text>
+        </Pressable>
+      </View>
+      <FlatList
+        data={taskList}
+        renderItem={renderData}
+        keyExtractor={(item: any) => item.id.toString()}
+      />
+      {
+        deleteList.length>0 && <Pressable onPress={()=>{
+          let updatedData=taskList.filter((item:any)=>{
+            return !deleteList.includes(item.id);
+          })
+          setTaskList(updatedData);
+          setDeleteList([])
+        }}>
+          <Text>Delete all</Text>
+        </Pressable>
+      }
+    </View>
+  );
+};
+
+export default index;
+
+```
+
+# Task for ui →
+
+React Native Task: Infinite Scroll with Ad Placement, Search, and Dark Mode.
+✅ Objective:
+Develop a React Native app that implements an infinite-scrolling list using FlatList, fetching real data
+dynamically from JSONPlaceholder, and displaying an ad item after every 4 posts.
+
+**or use this**
+
+(GET https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=YOUR_API_K
+🔐 Get your free API key at: https://newsapi.org/register)
+
+Requirements:
+
+1. Fetch Data from JSONPlaceholder
+Use Axios or React Query to fetch posts from JSONPlaceholder.
+Each list item should display the title and body of a post.
+Implement pagination (fetching data in chunks, e.g., 10 posts at a time).
+2. FlatList Setup
+Implement FlatList to display posts.
+Use FlatList with two view types:
+Post Item (shows title & body).
+Ad Item (shows "Sponsored Ad").
+3. Infinite Scrolling
+Load more posts when the user reaches the bottom.
+4. Ad Placement
+Insert an ad item after every 4 posts.
+The ad should be a separate view type in the list.
+The ad can be a simple Text displaying "Sponsored Ad", or an AdMob banner (optional).
+5. Implement the feature so that when ever user refresh the list it should again show only first page data.
+6. Additional Features
+✅ Dark Mode / Light Mode:
+Implement theme switching (use useColorScheme or Context API).
+✅ Search Functionality:
+Implement search bar to filter posts by title
+✅ Error Handling:
+Show a retry button if the API call fails.
+✅ Performance Optimization:
+Use FlatList optimizations (e.g., getItemLayout, initi
+
+Ans 
+
+```tsx
+import { ThemedView } from "@/components/ThemedView";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import {
+  ActivityIndicator,
+  Button,
+  FlatList,
+  StyleSheet,
+  Text,
+  TextInput,
+  useColorScheme,
+  View,
+} from "react-native";
+
+const POSTS_PER_PAGE = 10;
+
+const App = () => {
+  const colorScheme = useColorScheme();
+  const [posts, setPosts] = useState<any>([]);
+  const [page, setPage] = useState<any>(1);
+  const [searchQuery, setSearchQuery] = useState<any>("");
+  const [loading, setLoading] = useState<any>(false);
+  const [hasError, setHasError] = useState<any>(false);
+  const [hasMore, setHasMore] = useState<any>(true);
+  const [refreshing, setRefreshing] = useState(false);
+
+  // Add this new function
+  const handleRefresh = async () => {
+    try {
+      setRefreshing(true);
+      setHasError(false);
+      setHasMore(true);
+      setPage(1);
+      const res = await axios.get(
+        `https://jsonplaceholder.typicode.com/posts?_limit=${POSTS_PER_PAGE}&_page=1`
+      );
+      setPosts(res.data); // Replace old data with new
+      if (res?.data?.length < POSTS_PER_PAGE) setHasMore(false);
+    } catch {
+      setHasError(true);
+    } finally {
+      setRefreshing(false)
+    }
+  };
+
+  const fetchPosts = async () => {
+    try {
+      setLoading(true);
+      setHasError(false);
+      const res = await axios.get(
+        `https://jsonplaceholder.typicode.com/posts?_limit=${POSTS_PER_PAGE}&_page=${page}`
+      );
+      const newPosts = res.data;
+      setPosts((prev: any) => [...prev, ...newPosts]);
+      if (newPosts.length < POSTS_PER_PAGE) setHasMore(false);
+    } catch {
+      setHasError(true);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchPosts();
+  }, [page]);
+
+  const loadMore = () => {
+    if (!loading && hasMore) {
+      setPage((prev: any) => prev + 1);
+    }
+  };
+
+  const filteredPosts = posts.filter((p: any) =>
+    p.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const mixedList: any = [];
+  filteredPosts.forEach((item: any, index: any) => {
+    mixedList.push({ type: "post", data: item });
+    if ((index + 1) % 4 === 0) {
+      mixedList.push({ type: "ad", id: `ad-${index}` });
+    }
+  });
+
+  const renderItem = ({ item }: any) => {
+    if (item.type === "post") {
+      return (
+        <View style={styles.card}>
+          <Text style={styles.title}>{item?.data?.title}</Text>
+          <Text style={styles.body}>{item?.data?.body}</Text>
+        </View>
+      );
+    }
+    return (
+      <View style={styles.adContainer}>
+        <Text style={styles.adText}>🔊 Sponsored Ad</Text>
+      </View>
+    );
+  };
+
+  const theme = colorScheme === "dark" ? styles.dark : styles.light;
+
+  return (
+    <ThemedView style={[styles.container, theme]}>
+      <TextInput
+        placeholder="Search by title..."
+        style={[styles.searchInput, theme]}
+        value={searchQuery}
+        onChangeText={setSearchQuery}
+        placeholderTextColor={colorScheme === "dark" ? "#aaa" : "#555"}
+      />
+
+      {hasError ? (
+        <View style={styles.center}>
+          <Text style={{ color: "red" }}>Error loading posts.</Text>
+          <Button title="Retry" onPress={fetchPosts} />
+        </View>
+      ) : (
+        <FlatList
+          data={mixedList}
+          renderItem={renderItem}
+          keyExtractor={(item, index) =>
+            item.type === "post" ? item.data.id.toString() : item.id
+          }
+          onEndReached={loadMore}
+          onEndReachedThreshold={0.5}
+          ListFooterComponent={
+            loading ? <ActivityIndicator size="small" /> : null
+          }
+          getItemLayout={(_, index) => ({
+            length: 100,
+            offset: 100 * index,
+            index,
+          })}
+          refreshing={refreshing}
+          onRefresh={handleRefresh}
+        />
+      )}
+    </ThemedView>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: { flex: 1, paddingTop: 50 },
+  searchInput: {
+    padding: 10,
+    fontSize: 16,
+    margin: 10,
+    borderRadius: 8,
+    borderWidth: 1,
+  },
+  light: {
+    backgroundColor: "#fff",
+    color: "#000",
+    borderColor: "#ccc",
+  },
+  dark: {
+    backgroundColor: "#000",
+    color: "#fff",
+    borderColor: "#444",
+  },
+  center: {
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 20,
+  },
+  card: {
+    backgroundColor: "#f2f2f2",
+    marginHorizontal: 10,
+    marginBottom: 10,
+    padding: 15,
+    borderRadius: 8,
+  },
+  title: {
+    fontWeight: "bold",
+    fontSize: 16,
+    marginBottom: 5,
+  },
+  body: {
+    fontSize: 14,
+    color: "#333",
+  },
+  adContainer: {
+    backgroundColor: "#ffe4b5",
+    marginHorizontal: 10,
+    padding: 20,
+    marginBottom: 10,
+    borderRadius: 8,
+    alignItems: "center",
+  },
+  adText: {
+    fontWeight: "bold",
+    color: "#444",
+  },
+});
+
+export default App;
+
+```
+
+# **How we can handle form in react native? (about react form hook)**
+
+# Make a app where you are showing movies and`
+
+1 you have 2 columns to show movie cards
+
+2 add like functionality on that with the help of heart icon
+
+3 add add to cart functionality
+
+4 make a basic form and take data into single object.
+
+5 also make a simple drawer
+
+# Implement a simple figma and extract image and icons and implement in your page
+
+https://www.figma.com/proto/SglfRVv3M64Tin5BpEidjY/Flower-Delivery-App-UI--Community-?node-id=2002-94&p=f&t=pUKewdDrrZCPgQTb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1
+
+# Apply firebase notification?
+
+# **Make a form without using react-form-hook and handle it?**
