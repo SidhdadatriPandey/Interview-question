@@ -1,0 +1,194 @@
+# 6 What is Document Object Model (DOM)/DOM Tree
+
+Ans DOM is a logical tree representation of document.
+
+It allows us to manipulate or change web page content (html element)
+
+(ex with html code parent child relation)
+
+# 7 What is virtual DOM
+
+Ans Virtual DOM is copy of real DOM. DOM is a logical tree representation of document. It allows us to manipulate or change web page content (html element).
+
+React uses the virtual DOM to efficiently update UI without re-render the entire page which improve performance and make application more responsive.
+
+(you can see “Interview happy” video)
+
+# 8 What is component
+
+Ans In react components are reusable piece of code for creating user interface. (Then take ex of daily-news website)
+
+React components are JavaScript functions.  They return JSX.
+
+# 9 what are hooks in react
+
+Ans Hooks allow functional components to have access to state, lifecycle features and other react features.
+
+Ex useState, useEffect, useContext. useRef
+
+# 10 What is the first component in react
+
+Ans app component
+
+# 11 What are props in react
+
+Ans Props stands for properties and they are used to pass data between components. From parent to child.
+
+# 12 What is useState in react
+
+Ans useState is hook which allows to manipulate state within functional components.
+
+“useState” hook generally return an array with two values first is current state and second is function for updating it.
+
+# 13 What is useEffect in react
+
+Ans useEffect is hook and a way to handle life cycle of the component.
+
+# 14 What is cleanUp function in useEffect?
+
+Ans see Thapa Technical
+
+# 14 What is lifting state up
+
+Ans It is a technique used in react to share state between multiple components. (child to parent)
+
+# 15 what is prop drilling
+
+Ans It is a practice in which a prop or data is passed from one parent component to one or lower children’s component. (parent to child). For avoiding prop drilling we use context API and redux.
+
+# 18 What is returned by useState?
+
+# 19 What is HTTP?
+
+Ans HTTP (hypertext transfer protocol) works as a request and response protocol between a client and server.
+
+# 20 What is HTTP methods?
+
+Ans HTTP methods Get, Post, Put, Patch and Delete.
+
+GET
+
+The GET method is used to retrieve data on a server. Clients can use the GET method to access all of the resources.
+
+POST
+
+The POST method is used to create new resources. For instance, if the manager of an e-commerce store wanted to add a new product to the database, they would send a POST request to the /products.
+
+PUT
+
+The PUT method is used to replace an existing resource with an updated version.
+
+PATCH
+
+The PATCH method is used to update an existing resource. It is similar to PUT, except that PATCH enables clients to update specific properties on a resource—without overwriting the others.
+
+DELETE
+
+The DELETE method is used to remove data from a database.
+
+# 21 What is higher order components?
+
+Ans A function that takes Component and returns a new Component with enhanced functionality.
+
+# 23 What is error boundaries?
+
+Ans Error boundaries are react components that catch JavaScript errors anywhere in child component tree.
+
+Error boundaries not work in 4 cases
+
+1 Event handlers
+
+2 Asynchronous code (like setTimeOut())
+
+3 Server side rendering
+
+4 Error thrown in error boundary it self
+
+# 24 What is two way binding?
+
+Ans The concept of two-way binding in React typically refers to the synchronization of data between the state and the UI.
+
+# 25 What is routing?
+
+Ans Routing is the process of navigating between different pages without triggering a full page reload. (for performing routing we use routes and route)
+
+# 26. What is context API?
+
+Ans Context API is feature in react which is used to manage central/global state. We can use context api for avoiding prop drilling in react.
+
+# 27 What are advantages of redux?
+
+Ans
+
+# 28 What are advantages of context api?
+
+Ans
+
+# 29 What are problems that context api solves?
+
+# 30 What are object and classes?
+
+Ans A class is a blueprint for declaring and creating objects.
+
+An object is a class instance. (then take ex of house).
+
+# 31 What is JSX?
+
+Ans JSX stands for javascritpt XML. It allows us to write javascript in react js. JSX makes easier to write and add HTML in react js. (learn more about this……………)
+
+# 33 What is difference between jsx and html?
+
+Ans JSX is a syntax extension for JavaScript, while HTML is a markup language. JSX allows us to write javascript in react js.
+
+# 34 Difference between Context api and Redux?
+
+Ans There is no comparision between redux and context api their use cases are totally different Redux is state management library but context api is dependency injection mechanism. We compare both just because they both prevent prop drilling. Context api is included with react but Redux is external library.
+
+# 35 Explain about Life cycle and life cycle methods in react?
+
+React lifecyle is comple phases of components from creation to removal. Three phases –
+
+1 mounting 2 updating 3 unmounting
+
+1 Mounting  In mounting phase new component is created and added to the DOM and can only occur once.
+
+In mounting phase methods
+
+(i) Constructor – constructor called before mounting the component. Use state initialize state, binding state with handlers
+
+(ii) getDerivedStateFromProps  when we want to update our state on the basis of props then we can use this method.
+
+(iii) render  **The render method in React is a lifecycle method that's used**.To define what should be displayed on the screen
+
+(iv) componentDidMount  can be used for async calls like api call, setTimeOut call etc. (invoked only once after react insert component into DOM). It get called at last in mounting phase once.
+
+1. updating – In updating phase a component updates or re-renders
+
+methods
+
+1. getDerivedStateFromProps 
+2. shouldComponetUpdate for stopping unnecessary renders of component.
+3. GetSnapshotBeforeUpdate  method invoke just before DOM is being rendered. It is used to store previous values of the state after the dom is updated.
+4. componentDidUpdate  After updating if we want to perform any action like api call then we can use it.
+
+Unmounting  In unmounting phase component is removed from the DOM
+
+ComponentWillUnmount  this method is called during unmounting phase of react life cycle i.e. before components get unmounted. Ex remove listeners, clear timeouts.
+
+# 36 Should we set state in componentWillUnmount()?
+
+Ans  We should not call setState() in componentWillUnmounting because the component will never be re-rendered. Once a component instance is unmounted, it will never be mounted again.
+
+# 36 What is Redux?
+
+Ans Redux is used to manage central/global state. We can use redux for avoiding prop drilling in react. Redux is external library
+
+# 37 What is store?
+
+Ans In Redux, the store is a JavaScript object that holds an application's global state.
+
+# 38 What is reducer?
+
+Ans A Redux reducer is a function that determines how the state of an application changes in response to an action sent to the store.
+
+# 39 How to clear timeouts like setTimeout and setIntervel?
